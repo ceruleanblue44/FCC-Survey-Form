@@ -75,8 +75,6 @@ p {
 	color: var(--color-text);
 	border-radius: 0.25rem;
 	width: 100%;
-	/*	How to make it narrower while keeping the 100% width property?
-Make it wrap the forms?  - @media fixes that! */
 	margin: 3.5rem auto 1rem auto;
 	padding: 2rem;
 }
@@ -91,7 +89,6 @@ Make it wrap the forms?  - @media fixes that! */
 		padding: 15px;
 	}
 }
-/* Media queries don`t look good, pls fix! */
 
 @media (min-width: 600px) {
 	.container {
@@ -118,8 +115,6 @@ textarea {
 	margin: 0;
 	font-family: inherit;
 	font-size: inherit;
-	/*	I was wondering why the placeholder in the textarea has
-a Courier font and how to change it - this does. */
 	line-height: inherit;
 }
 
