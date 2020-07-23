@@ -1,0 +1,174 @@
+:root {
+	--color-marsala: #3a182a;
+	--color-text: #f2e7f7;
+	--color-button: #e561a9;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.header {
+	text-align: center;
+	color: var(--color-text);
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.4;
+	color: var(--color-text);
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	background: linear-gradient(
+		180deg,
+		rgba(253, 215, 198, 1),
+		rgba(253, 216, 160, 1),
+		rgba(235, 141, 115, 1),
+		rgba(251, 146, 84, 1),
+		rgba(250, 172, 152, 1),
+		rgba(254, 188, 173, 1),
+		rgba(254, 188, 173, 1)
+	);
+	background-image: url(CMyoga2.jpg);
+
+	/*https://sailajanand.files.wordpress.com/2019/01/body-clouds-early-morning-8236941405994465.jpg
+			This is the good URL for the background picture*/
+
+	opacity: 1;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+p {
+	font-size: 1.125rem;
+}
+
+h1,
+p {
+	margin-top: 0;
+	margin-bottom: 0.75rem;
+}
+
+.container {
+	background-color: var(--color-marsala);
+	opacity: 0.95;
+	text-align: justify;
+	color: var(--color-text);
+	border-radius: 0.25rem;
+	width: 100%;
+	/*	How to make it narrower while keeping the 100% width property?
+Make it wrap the forms?  - @media fixes that! */
+	margin: 3.5rem auto 1rem auto;
+	padding: 2rem;
+}
+
+.container-header {
+	text-align: center;
+	margin-top: 0.5rem;
+}
+
+@media (max-width: 599px) {
+	.container {
+		padding: 15px;
+	}
+}
+/* Media queries don`t look good, pls fix! */
+
+@media (min-width: 600px) {
+	.container {
+		max-width: 700px;
+	}
+}
+
+.description {
+	font-style: italic;
+	font-size: 1.3rem;
+	/*	Can add a text shadow like so: text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); */
+}
+
+label {
+	display: flex;
+	align-items: center;
+	font-size: 1rem;
+}
+
+input,
+button,
+select,
+textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	/*	I was wondering why the placeholder in the textarea has
+a Courier font and how to change it - this does. */
+	line-height: inherit;
+}
+
+button {
+	border: none;
+}
+
+.all-that-apply {
+	font-size: 0.9rem;
+	padding-left: 0.3rem;
+}
+
+#pls-select {
+	color: #92888e;
+}
+
+/* form */
+
+.form-control {
+	margin-bottom: 1rem;
+	border-radius: 0.25rem;
+	width: 100%;
+	font-size: 0.9rem;
+}
+
+.form-control:focus {
+	border-color: #0d13f0;
+	outline: 0;
+}
+
+.form-group {
+	padding-bottom: 1.125rem;
+}
+
+.submit-button {
+	width: 100%;
+	display: block;
+	background: var(--color-button);
+	color: inherit;
+	padding: 0.5rem;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.input-radio,
+.input-checkbox {
+	margin-right: 0.5rem;
+}
+
+#other-specify {
+	margin-top: 0.5rem;
+}

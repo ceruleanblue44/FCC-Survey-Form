@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700&display=swap"
+    rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <header class="container-header">
+        <h1 id="title"> Yoga Survey Form </h1>
+        <p id="description" class="description">My yoga survey</p>
+        </header>
+	
+        <form id="survey-form">
+		
+            <div class="form-group">
+            <label id="name-label" for="name"><p>Name</p></label>
+            <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                class="form-control"
+                required
+                />
+            </div>
+           
+	    <div class="form-group">
+            <label id="email-label" for="email"><p>E-mail</p></label>
+            <input
+               id="email"
+               type="email"
+               name="email"
+               placeholder="Enter your e-mail"
+               class="form-control"
+               required
+               />
+            </div>
+            
+	    <div class="form-group">
+            <label id="number-label" for="number"> <p>Age<span class="all-that-apply">(optional)</span></p>
+            </label>
+            <input
+                name="age"
+                id="number"
+                type="number"
+                placeholder="Enter your age"
+                class="form-control"
+                min="10"
+                max="99"
+                required
+               />
+            </div>
+            
+	    <div class="form-group">
+                <p>What is your favourite type of yoga? <span class="all-that-apply">(Check all that apply)</span> </p>
+            <label for="hatha">
+                <input
+                      id="hatha"
+                      name="favourite-type"
+                      value="hatha"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />
+                Hatha yoga
+            </label>
+            <label for="power">
+                <input
+                      id="power"
+                      name="favourite-type"
+                      value="power"
+                      type="checkbox"
+		              class="input-checkbox"
+                      />
+                      
+                Power yoga
+            </label>
+            <label for="restore">
+                <input
+                      id="restore"
+                      name="favourite-type"
+                      value="restorative"
+                      type="checkbox"
+                      class="input-checkbox"
+                    />
+                     
+                Restorative yoga
+            </label>
+            <label for="vin">
+                <input
+                      id="vin"
+                      name="favourite-type"
+                      value="vinyasa"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />
+                      
+                Vinyasa yoga
+            </label>
+            <label for="yin">
+                <input
+                      id="yin"
+                      name="favourite-type"
+                      value="yin"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />
+                    
+                Yin yoga
+            </label>
+            </div>
+            
+	    <div class="form-group">
+            <p>How often do you normally practice yoga?</p>
+            <select id="dropdown" name="how-often-yoga" class="form-control" required>
+                <option disabled selected value id="pls-select">Please select</option>
+                <option value="every-day">Every day</option>
+                <option value="twice-a-week">2-3 times a week</option>
+                <option value="once-a-week">Once a week</option>
+                <option value="twice-a-month">Couple of times a month</option>
+            </select>
+            </div>
+            
+	    <div class="form-group">
+            <p>What is your current level?</p>
+            <label for="beginner">  
+                <input
+                      id="beginner"
+                       name="current-level"
+                       value="beginner"
+                       type="radio"
+                       class="input-radio"
+                       />
+                Beginner
+            </label>
+            <label for="interm"> 
+                <input
+                       id="interm"
+                       name="current-level"
+                       value="intermediate"
+                       type="radio"
+                       class="input-radio"
+                       />
+                Intermediate
+            </label>
+            <label for="adv"> 
+                <input
+                       id="adv"
+                       name="current-level"
+                       value="advanced"
+                       type="radio"
+                       class="input-radio"
+                       />
+                Advanced
+            </label>
+            </div>
+           
+	    <div class="form-group">
+            <p>What would you like to get from your yoga practice? <span class="all-that-apply">(Check all that apply)</span></p>
+            <label for="muscle-strength">
+                <input
+                      id="muscle-strength"
+                      name="benefit"
+                      value="muscle-strength"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Muscle strength
+            </label>
+            <label for="weight-loss"> 
+                <input
+                      id="weight-loss"
+                      name="benefit"
+                      value="hatha"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Weight loss
+            </label>
+            <label for="joint stability">
+                <input
+                      id="joint stability"
+                      name="benefit"
+                      value="joint-stability"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Joint stability
+            </label>
+            <label for="improve-posture">
+                <input
+                      id="improve-posture"
+                      name="benefit"
+                      value="improve-posture"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Improve posture
+            </label>
+            <label for="flexibility">
+                <input
+                      id="flexibility"
+                      name="benefit"
+                      value="flexibility"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Flexibility
+            </label>
+            <label for="improve-breathing">
+                <input
+                      id="improve-breathing"
+                      name="benefit"
+                      value="improve-breathing"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Improve breathing
+            </label>
+            <label for="nostress">
+                <input
+                      id="nostress"
+                      name="benefit"
+                      value="nostress-peace"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Reduce stress / Increase peace of mind
+            </label>
+            <label for="sleep-no-anxiety">
+                <input
+                      id="sleep-no-anxiety"
+                      name="benefit"
+                      value="sleep-no-anxiety"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Improve sleep / Decrease anxiety
+            </label>
+            <label for="body-aware">
+                <input
+                      id="body-aware"
+                      name="benefit"
+                      value="body-aware"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Increase body awareness
+            </label>
+            <label for="healthy-life">
+                <input
+                      id="healthy-life"
+                      name="benefit"
+                      value="healthier-lifestyle"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Healthier lifestyle
+            </label>
+            <label for="spirit-growth">
+                <input
+                      id="spirit-growth"
+                      name="benefit"
+                      value="spiritual-growth"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Spiritual growth 
+            </label>
+            <label for="mindful">
+                <input
+                      id="mindful"
+                      name="benefit"
+                      value="improve-mindfulness"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Improve mindfulness
+            </label>
+            <label for="other">
+                <input
+                      id="other"
+                      name="benefit"
+                      value="other"
+                      type="checkbox"
+                      class="input-checkbox"
+                      />Other
+                </label>
+                <label for="other-specify">
+                <input
+                      id="other-specify"
+                      type="text"
+                      name="other-specify"
+                      placeholder="Please specify"
+                      class="form-control"
+                      maxlength="100"/>
+                </label>
+                </div>
+                <div>
+                <p>Do you have any comments and/or suggestions?</p>
+                <textarea
+                     id="comments"
+                     name="comment"
+                     placeholder="Please enter your comments here"
+                     class="form-control"
+                     rows="5"
+                     cols="30"
+                     ></textarea>
+            </div>
+            
+	    <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit
+            </button>
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>
